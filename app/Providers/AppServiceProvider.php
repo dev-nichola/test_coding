@@ -2,16 +2,19 @@
 
 namespace App\Providers;
 
+use App\Services\AdminMobilService;
 use Illuminate\Support\ServiceProvider;
+use App\Services\Impl\AdminMobilServiceImpl;
+use Illuminate\Contracts\Support\DeferrableProvider;
 
-class AppServiceProvider extends ServiceProvider
+class AppServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * Register any application services.
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(AdminMobilService::class, AdminMobilServiceImpl::class);
     }
 
     /**
@@ -20,5 +23,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+    }
+
+    public function provides()
+    {
+        return [AdminMobilService::class];
     }
 }

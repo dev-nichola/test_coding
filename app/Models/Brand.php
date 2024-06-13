@@ -22,4 +22,9 @@ class Brand extends Model
         return $this->hasMany(ModelBrand::class,'brand_id', 'id');
     }
 
+    public function mobil() : HasMany
+    {
+        return $this->hasMany(Mobil::class, 'brand_id', 'id');
+    }
+
 }

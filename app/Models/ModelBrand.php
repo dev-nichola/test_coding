@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ModelBrand extends Model
-{  
+{   
     protected $table ='model_brands';
     protected $primaryKey = 'id';
     protected $keyType = 'int';
@@ -22,6 +22,11 @@ class ModelBrand extends Model
     public $timestamps = true;
     public function brand() : BelongsTo {
         return $this->belongsTo(Brand::class, 'brand_id', 'id');
+    }
+
+    public function mobil() : HasMany 
+    {
+        return $this->hasMany(Mobil::class, 'model_brand_id', 'id');
     }
    
 
