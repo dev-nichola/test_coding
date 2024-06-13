@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b0d91585d5c343970b448c9041d843f",
+    "content-hash": "648eb3834afbc486bb23fd6145c555b8",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,67 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
+        },
+        {
+            "name": "devhereco/livewire-delete-confirmation",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devhereco/Livewire-Delete-Confirmation.git",
+                "reference": "1e8ee76e1d9190c7b16860e2bd206438ba8a4aa4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devhereco/Livewire-Delete-Confirmation/zipball/1e8ee76e1d9190c7b16860e2bd206438ba8a4aa4",
+                "reference": "1e8ee76e1d9190c7b16860e2bd206438ba8a4aa4",
+                "shasum": ""
+            },
+            "require": {
+                "jantinnerezo/livewire-alert": "^2.0|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "devhereco\\LivewireConfirmDelete\\ConfirmDeleteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "devhereco\\LivewireConfirmDelete\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammed B",
+                    "email": "mohammed.b.dev@gmail.com"
+                }
+            ],
+            "description": "A Laravel package for easily handling the deletion of Eloquent models with confirmation and success/error messaging.",
+            "homepage": "https://github.com/devhereco/Livewire-Delete-Confirmation",
+            "keywords": [
+                "confirmation",
+                "confirmation dialog",
+                "delete",
+                "delete confirmation",
+                "laravel",
+                "laravel package",
+                "livewire",
+                "livewire alert",
+                "messaging",
+                "model",
+                "model deletion"
+            ],
+            "support": {
+                "issues": "https://github.com/devhereco/Livewire-Delete-Confirmation/issues",
+                "source": "https://github.com/devhereco/Livewire-Delete-Confirmation/tree/1.0"
+            },
+            "time": "2023-10-23T04:03:29+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1051,6 +1112,68 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "jantinnerezo/livewire-alert",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jantinnerezo/livewire-alert.git",
+                "reference": "24281639258daf80fe0a585f55b7490a88fd68ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jantinnerezo/livewire-alert/zipball/24281639258daf80fe0a585f55b7490a88fd68ef",
+                "reference": "24281639258daf80fe0a585f55b7490a88fd68ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0|^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.1|^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.15|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jantinnerezo\\LivewireAlert\\LivewireAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireAlert": "Jantinnerezo\\LivewireAlert\\LivewireAlertFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jantinnerezo\\LivewireAlert\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jantinn Erezo",
+                    "email": "erezojantinn@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package provides a simple alert utilities for your livewire components.",
+            "homepage": "https://github.com/jantinnerezo/livewire-alert",
+            "keywords": [
+                "jantinnerezo",
+                "livewire-alert"
+            ],
+            "support": {
+                "issues": "https://github.com/jantinnerezo/livewire-alert/issues",
+                "source": "https://github.com/jantinnerezo/livewire-alert/tree/v3.0.2"
+            },
+            "time": "2024-03-10T10:47:39+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v11.10.0",
             "source": {
@@ -1890,6 +2013,77 @@
                 }
             ],
             "time": "2024-05-21T13:39:04+00:00"
+        },
+        {
+            "name": "masmerise/livewire-toaster",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/masmerise/livewire-toaster.git",
+                "reference": "6a610413da47ea6306afc1bce35d1dbe19a15ea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/masmerise/livewire-toaster/zipball/6a610413da47ea6306afc1bce35d1dbe19a15ea2",
+                "reference": "6a610413da47ea6306afc1bce35d1dbe19a15ea2",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "~8.3"
+            },
+            "conflict": {
+                "stevebauman/unfinalize": "*"
+            },
+            "require-dev": {
+                "dive-be/php-crowbar": "^1.0",
+                "larastan/larastan": "^2.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^9.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Toaster": "Masmerise\\Toaster\\Toaster"
+                    },
+                    "providers": [
+                        "Masmerise\\Toaster\\ToasterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masmerise\\Toaster\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhammed Sari",
+                    "email": "support@muhammedsari.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Beautiful toast notifications for Laravel / Livewire.",
+            "homepage": "https://github.com/masmerise/livewire-toaster",
+            "keywords": [
+                "alert",
+                "laravel",
+                "livewire",
+                "toast",
+                "toaster"
+            ],
+            "support": {
+                "issues": "https://github.com/masmerise/livewire-toaster/issues",
+                "source": "https://github.com/masmerise/livewire-toaster/tree/2.2.1"
+            },
+            "time": "2024-04-09T10:51:09+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6235,16 +6429,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.11.1",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c"
+                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
-                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
+                "reference": "3a6b9a42cd8f8771bd4295d13e1423fa7f3d942c",
                 "shasum": ""
             },
             "require": {
@@ -6252,11 +6446,12 @@
             },
             "conflict": {
                 "doctrine/collections": "<1.6.8",
-                "doctrine/common": "<2.13.3 || >=3,<3.2.2"
+                "doctrine/common": "<2.13.3 || >=3 <3.2.2"
             },
             "require-dev": {
                 "doctrine/collections": "^1.6.8",
                 "doctrine/common": "^2.13.3 || ^3.2.2",
+                "phpspec/prophecy": "^1.10",
                 "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
             },
             "type": "library",
@@ -6282,7 +6477,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
             },
             "funding": [
                 {
@@ -6290,7 +6485,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-08T13:26:56+00:00"
+            "time": "2024-06-12T14:39:25+00:00"
         },
         {
             "name": "nunomaduro/collision",

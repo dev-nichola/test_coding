@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminBrandController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/template', function() {
@@ -9,3 +10,6 @@ Route::get('/template', function() {
 Route::get('/dashboard', function() {
     return view('admin.dashboard.index');
 });
+
+Route::get('/brand', [AdminBrandController::class, 'index'])->name('brand');
+Route::get('/brand/create', [AdminBrandController::class, 'create'])->name('brand.create');

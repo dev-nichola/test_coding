@@ -1,8 +1,8 @@
 @props(['color' => 'bg-gray-800', 'to' => ''])
 
-<div class="flex gap-3 items-center">
+<div class="flex items-center gap-3">
     <a href="{{ $to }}"
-        {{ $attributes->merge(['class' => "px-3 py-3 $color text-sm rounded-lg font-semibold text-white"]) }}>
+        {{ $attributes->merge(['class' => "px-3 py-3 $color text-sm rounded-lg font-semibold text-white"]) }} wire:navigate>
         {{ $slot }}
     </a>
 </div>
