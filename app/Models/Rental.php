@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rental extends Model
 {
-    use HasFactory;
+    protected $guarded = [
+        "id"
+    ];
+
+    
 }

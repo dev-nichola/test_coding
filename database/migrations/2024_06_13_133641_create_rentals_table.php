@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('rentals', function (Blueprint $table) {
             $table->id();
+            $table->string('fullname');
+            $table->string('license');
+            $table->date('dateFrom');
+            $table->date('dateUntil');
+            $table->string('address');
+            $table->string('city');
+            $table->string('postCode');
             $table->timestamps();
         });
     }

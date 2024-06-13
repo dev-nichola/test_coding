@@ -36,6 +36,11 @@ class Mobil extends Model
     public function modelBrand() : BelongsTo {
         return $this->belongsTo(ModelBrand::class,'model_brand_id', 'id');
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
        
 
 }

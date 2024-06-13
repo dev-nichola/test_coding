@@ -11,7 +11,7 @@
             </header>
             <!-- Button Primary -->
             <div class="bg-primary group w-max rounded-full p-1">
-                <a href="details.html" class="btn-primary">
+                <a href="#" class="btn-primary">
                     <p>
                         Book Now
                     </p>
