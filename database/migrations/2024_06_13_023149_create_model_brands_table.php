@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('model_brands', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->unique();
+            $table->string('slug')->unique();
+
+            $table->foreignId('brand_id');
             $table->timestamps();
         });
     }

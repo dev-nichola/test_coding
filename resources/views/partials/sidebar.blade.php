@@ -10,7 +10,7 @@
             <small class="text-sm font-semibold uppercase text-gray-500">Master</small>
 
             <x-side-link to="#"><i class="fas fa-car"></i>  Mobil</x-side-link>
-            <x-side-link to="#"><i class="fas fa-folder"></i>  Model</x-side-link>
+            <x-side-link to="{{ route('model') }}"><i class="fas fa-folder"></i>  Model</x-side-link>
             <x-side-link to="{{ route('brand') }}"><i class="fas fa-bandage"></i>  Brand</x-side-link>
 
             <small class="text-sm font-semibold uppercase text-gray-500">Rentals</small>
