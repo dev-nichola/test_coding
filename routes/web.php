@@ -13,3 +13,4 @@ Route::get('/dashboard', function() {
 
 Route::get('/brand', [AdminBrandController::class, 'index'])->name('brand');
 Route::get('/brand/create', [AdminBrandController::class, 'create'])->name('brand.create');
+Route::get('/brand/edit', [AdminBrandController::class, 'edit'])->name('brand.edit');

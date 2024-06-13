@@ -71,7 +71,7 @@ final class BrandTable extends PowerGridComponent
 
         $ids = implode('-', $ids);
 
-        return redirect()->route('ekspedisi.edit', [
+        return redirect()->route('brand.edit', [
             'ids' => $ids
         ]);
     }
@@ -95,7 +95,7 @@ final class BrandTable extends PowerGridComponent
 
     public function datasource(): Builder
     {
-        return Brand::query();
+        return Brand::query()->latest();
     }
 
     public function relationSearch(): array
