@@ -26,6 +26,6 @@ Route::get('/mobil/create', [AdminMobilController::class, 'create'])->name('mobi
 Route::post('/mobil/store', [AdminMobilController::class, 'store'])->name('mobil.store');
 
 
-Route::get('/pages', function() {
-    return view('pages');
+Route::get('/', function() {
+    return view('pages.index');
 });
