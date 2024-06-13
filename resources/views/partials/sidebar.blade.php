@@ -2,7 +2,7 @@
     <div id="Sidebar"
             class="no-scrollbar flex h-screen w-[280px] shrink-0 flex-col gap-[30px] overflow-y-scroll p-[30px]">
             <div class="flex justify-start">
-                <h1 class="text-lg font-bold"><i class="fa-brands fa-laravel"></i>  VROM </h1>
+                <h1 class="text-lg font-bold"><i class="fa-brands fa-laravel"></i> Bismillah Rental </h1>
             </div>
             <h3 class="text-sm font-semibold uppercase text-gray-500">Home</h3>
             <x-side-link to="#"><i class="fas fa-house"></i>  Dashboard</x-side-link>
